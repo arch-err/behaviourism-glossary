@@ -2,20 +2,26 @@
   "$schema": "https://raw.githubusercontent.com/vicinaehq/vicinae/refs/heads/main/extra/schemas/extension.json",
   "name": "behaviourism-glossary",
   "title": "Behaviourism Glossary",
-  "description": "Fuzzy-search the 258-term Behaviour Analysis Glossary from animallearning.org — radical-behaviourism vocabulary at your fingertips.",
-  "categories": ["Documentation"],
-  "keywords": [
-    "behaviourism",
-    "behavior-analysis",
-    "skinner",
-    "glossary",
-    "aba"
-  ],
-  "license": "MIT",
+  "description": "Fuzzy-search 258 behaviour-analysis terms from animallearning.org without leaving your launcher.",
+  "icon": "extension_icon.png",
   "author": "arch-err",
   "contributors": [],
   "pastContributors": [],
-  "icon": "extension_icon.png",
+  "license": "MIT",
+  "categories": [
+    "Documentation",
+    "Productivity"
+  ],
+  "keywords": [
+    "behaviourism",
+    "behavior",
+    "analysis",
+    "skinner",
+    "glossary",
+    "aba",
+    "reference",
+    "dictionary"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/arch-err/behaviourism-glossary.git"
@@ -27,10 +33,17 @@
   "commands": [
     {
       "name": "behaviourism-glossary",
-      "title": "Behaviourism Glossary",
-      "subtitle": "Behaviour Analysis Glossary",
-      "description": "Fuzzy-search 258 radical-behaviourism terms from animallearning.org.",
-      "mode": "view"
+      "title": "Search Glossary",
+      "subtitle": "Behaviourism Glossary",
+      "description": "Fuzzy-search 258 behaviour-analysis terms, acronyms, and categories from the animallearning.org glossary.",
+      "mode": "view",
+      "keywords": [
+        "behaviour",
+        "behavior",
+        "glossary",
+        "skinner",
+        "aba"
+      ]
     }
   ],
   "preferences": [],
