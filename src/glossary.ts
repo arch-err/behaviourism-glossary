@@ -3,6 +3,8 @@ export interface GlossaryEntry {
 	definition: string;
 	acronym?: string;
 	category?: string;
+	/** Extra search terms — e.g. the spelled-out form of an acronym, alternate spellings. */
+	keywords?: string[];
 }
 
 export const GLOSSARY: GlossaryEntry[] = [
@@ -419,18 +421,21 @@ export const GLOSSARY: GlossaryEntry[] = [
 			"Differential reinforcement of alternative behavior. A procedure to reduce a target behavior by arranging more favorable reinforcement contingencies for a specific alternative response.",
 		acronym: "DRA",
 		category: "Reinforcement & Punishment",
+		keywords: ["Differential reinforcement of alternative behavior"],
 	},
 	{
 		term: "DRH",
 		definition: "Differential reinforcement of high-rate responding.",
 		acronym: "DRH",
 		category: "Reinforcement & Punishment",
+		keywords: ["Differential reinforcement of high-rate responding"],
 	},
 	{
 		term: "DRL",
 		definition: "Differential reinforcement of low-rate responding.",
 		acronym: "DRL",
 		category: "Reinforcement & Punishment",
+		keywords: ["Differential reinforcement of low-rate responding"],
 	},
 	{
 		term: "DRO",
@@ -438,6 +443,7 @@ export const GLOSSARY: GlossaryEntry[] = [
 			"Differential reinforcement of other behavior. A procedure to reduce a target behavior by delivering reinforcers following a period of time in the absence of the target response.",
 		acronym: "DRO",
 		category: "Reinforcement & Punishment",
+		keywords: ["Differential reinforcement of other behavior"],
 	},
 	{
 		term: "Duration recording",

@@ -13,6 +13,7 @@ function buildKeywords(entry: GlossaryEntry): string[] {
 	const kws: string[] = [entry.term];
 	if (entry.acronym) kws.push(entry.acronym);
 	if (entry.category) kws.push(entry.category);
+	if (entry.keywords) kws.push(...entry.keywords);
 	return kws;
 }
 
@@ -50,7 +51,6 @@ function groupByCategory(entries: GlossaryEntry[]): GroupedEntries[] {
 function EntryItem({ entry }: { entry: GlossaryEntry }) {
 	return (
 		<List.Item
-			key={entry.term}
 			title={entry.term}
 			subtitle={truncate(entry.definition)}
 			keywords={buildKeywords(entry)}
