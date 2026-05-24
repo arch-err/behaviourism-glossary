@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.vicinae/
+vicinae-env.d.ts
+.DS_Store
+*.log
+.env*
